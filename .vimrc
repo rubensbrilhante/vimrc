@@ -8,8 +8,8 @@ set nocompatible "do not botther Vi compatibility
 "set pastetoggle=<F2>
 "set clipboard=unnamed
 
-"set mouse=a
-"set bs=2
+set mouse=a
+set bs=2
 
 
 filetype on
@@ -17,15 +17,20 @@ filetype plugin indent on
 syntax enable
 
 set number
-"set tw=79
-"set nowrap
+set tw=79
+set nowrap
 set fo-=t 
-"set colorcolumn=80
-"highlight ColorColumn ctermbg=233
+
+colorscheme elflord
+
+set t_Co=256
+set colorcolumn=120
+"let &colorcolumn=join(range(120,999),",")
+highlight ColorColumn guibg=#aaaaaa ctermbg=0
+"execute "set colorcolumn=" . join(range(120,335), ',')
 
 " COLOR SCHEME SETTINGS:
 
-set t_Co=256
 "set t_AB=[48;5;%dm
 "set t_AF=[38;5;%dm
 
@@ -35,14 +40,12 @@ set t_Co=256
 " * koehler
 " * slate
 
-
 set hlsearch
 
 set visualbell
 
 set wildmenu
 
-colorscheme desert
 
 set path+=**
 

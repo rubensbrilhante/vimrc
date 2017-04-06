@@ -3,8 +3,7 @@
 # Create symbolic links to vim files
 
 # .vimrc
-rm ~/.vimrc
-ln .vimrc ~/.vimrc
+rm ~/.vimrc || ln .vimrc ~/.vimrc
 # TODO: color theme
 #mkdir -p  ~/.vim/
 #rm -rf ~/.vim/colors/
