@@ -15,6 +15,7 @@ set bs=2
 filetype on
 filetype plugin indent on
 syntax enable
+filetype plugin on
 
 set number
 set tw=79
