@@ -47,6 +47,7 @@ set visualbell
 
 set wildmenu
 
+command FormatJson execute "%!python -m json.tool"
 
 set path+=**
 
